@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.f-page{
+    width: 100%;
+    height: 100vh;
+}
+
+.f-page video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav{
+    margin: auto;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+nav .logo{
+    width: 100px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.Logo-n{
+    margin-right: 47%;
+    font-size: 20px;
+    color: #ef79b4;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 17px;
+    position: relative;
+}
+
+ul{
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+a:hover{
+    color:#FF99CC;
+}
+
+nav ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background:white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    width: 60%;
+    padding-left: 310px;
+    top: 45%;
+    transform: translateY(-50%,50%);
+    text-align: center;
+    color: #fff;
+}
+
+.container h1{
+    font-size: 30px;
+    text-align: center;
+}
